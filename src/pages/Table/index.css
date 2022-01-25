@@ -1,0 +1,31 @@
+.table {
+  text-transform: capitalize;
+}
+.table > div {
+  overflow-x: hidden;
+}
+.table header {
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  min-height: initial;
+}
+
+.table input {
+  padding: 10px 30px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  border: 1px solid var(--gray);
+  display: block;
+}
+
+.table .btn-link {
+  color: var(--text);
+}
+
+.table .rdt_TableCol > div:hover {
+  color: white !important;
+  font-weight: bold;
+}

@@ -1,0 +1,13 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: var(--third);
+  font-weight: bold;
+}
+
+.breadcrumb svg {
+  margin: 0 8px;
+}

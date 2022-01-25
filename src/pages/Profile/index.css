@@ -1,0 +1,118 @@
+.profile h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.profile-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-tabs {
+  width: 65%;
+}
+
+.profile-tabs .tabs-links {
+  display: flex;
+  width: 100%;
+}
+
+.tabs-links button {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  outline: none;
+  padding-bottom: 10px;
+  background: initial;
+  border-bottom: 2px solid #eaeaea;
+  color: #989898;
+  border-radius: initial;
+}
+
+.tabs-links button.active {
+  color: #ae4b2b;
+  font-weight: bold;
+  border-bottom: 2px solid #ae4b2b;
+}
+
+.tabs-content {
+  padding-top: 20px;
+}
+.content .video {
+  border: 2px solid #eaeaea;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+}
+
+.content p {
+  margin-top: 20px;
+}
+
+.profile-detail {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+  border: 2px solid var(--secondary);
+}
+
+.profile-detail .status {
+  background: var(--secondary);
+  color: white;
+  padding: 8px 20px;
+  position: absolute;
+  top: -16px;
+}
+.profile-detail select {
+  margin-bottom: 20px;
+  padding: 8px 50px 8px 10px;
+  border-radius: 100px;
+  outline: none;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, transparent);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  appearance: none;
+}
+.profile-detail .img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+}
+
+.profile-detail .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-detail .list-info {
+  list-style-type: none;
+}
+
+.profile-detail .list-info li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.profile-detail .list-info li .icon {
+  margin-right: 10px;
+}
+
+/* Questions */
+.profile-questions {
+  width: 100%;
+}
+
+.profile-questions td {
+  padding: 6px;
+}
+
+.profile-questions tr td:last-child {
+  font-weight: 500;
+}

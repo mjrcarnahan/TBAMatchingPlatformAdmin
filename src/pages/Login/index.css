@@ -1,0 +1,157 @@
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.login-left {
+  background: linear-gradient(to right, #abbfb5, #3b7d5d);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  clip-path: circle(90% at 0 50%);
+  color: white;
+  padding-right: 15%;
+  padding-left: 5%;
+  text-align: center;
+}
+.login-left img {
+  max-width: 200px;
+}
+
+.login-right {
+  width: 50%;
+  padding-right: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-right > * {
+  margin-bottom: 15px;
+}
+
+.login-right .btn-primary,
+.login-right .btn-secondary,
+.login-right .input {
+  min-width: 400px;
+  padding: 15px;
+}
+.login-right .input {
+  padding: 0;
+}
+
+.login .logo {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  height: 60px;
+  padding: 0;
+}
+.login .logo img {
+  height: 60px;
+}
+
+.login .circle {
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
+}
+
+.login .circle-container {
+  position: relative;
+  padding-top: 10px;
+}
+.login .circle-container div {
+  border: 1px solid #c7d1cc;
+}
+.login .circle-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+.login .circle-2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pie {
+  display: none;
+}
+
+.boton-login-desktop {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .login-left {
+    clip-path: circle(75% at 0 50%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .login {
+    flex-direction: column;
+  }
+  .login .circle {
+    display: none;
+  }
+  .login-left {
+    clip-path: circle(1200px at 50% -800px);
+    min-height: 400px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .login-left img {
+    max-width: 150px;
+  }
+  .login-left p,
+  .login-left h4 {
+    width: 100%;
+  }
+  .login-right {
+    flex: 1;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-left {
+    border-radius: 0;
+    clip-path: initial;
+    min-height: 320px;
+    clip-path: circle(576px at 50% -256px);
+  }
+  .login-left img {
+    max-width: 100px;
+  }
+  .login-left .mt-40 {
+    margin-top: 20px;
+  }
+  .login-right {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  .login-right .btn-primary,
+  .login-right .btn-secondary,
+  .login-right .input {
+    min-width: 100%;
+  }
+}
